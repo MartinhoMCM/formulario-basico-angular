@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'formulario';
 
-  name: string = '';
+  name: string = 'Dev';
 
   setValue() {
-    this.name = 'Nancy';
+    this.name = 'Martinho';
   }
 }

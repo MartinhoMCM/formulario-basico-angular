@@ -1,13 +1,16 @@
-<form #f="ngForm" action="" (ngSubmit)="onSubmit(f)" novalidate>
+<form #f="ngForm" action="" (ngSubmit)="onSubmit(f)">
 
-    <input type="text" name="firstName" ngModel #firstName ="ngModel">
-    <input name="last" ngModel>
+    <input type="text" name="firstName" ngModel #firstName ="ngModel" required>
+    <input name="last" ngModel #last="ngModel">
     <button>Submit</button>
 
 </form>
 
 
-<pre> {{firstName.value}}</pre>
-<pre> {{firstName.valid}}</pre>
+<!-- <pre> {{firstName.value}}</pre>
+<pre>{{last.value}}</pre> -->
 <p>Form value: {{ f.value | json }}</p>
-    <p>Form valid: {{ f.valid }}</p>
+<pre> {{firstName.valid}}</pre>
+<!-- 
+
+<p>Form valid: {{ f.valid }}</p> -->
