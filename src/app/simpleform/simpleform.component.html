@@ -1,0 +1,13 @@
+<form #f="ngForm" action="">
+
+    <input type="text" name="firstName" ngModel #firstName ="ngModel">
+    <input name="last" ngModel>
+    <button>Submit</button>
+
+</form>
+
+
+<pre> {{firstName.value}}</pre>
+<pre> {{firstName.valid}}</pre>
+<p>Form value: {{ f.value | json }}</p>
+    <p>Form valid: {{ f.valid }}</p>
