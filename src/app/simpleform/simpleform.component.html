@@ -1,4 +1,4 @@
-<form #f="ngForm" action="">
+<form #f="ngForm" action="" (ngSubmit)="onSubmit(f)" novalidate>
 
     <input type="text" name="firstName" ngModel #firstName ="ngModel">
     <input name="last" ngModel>
